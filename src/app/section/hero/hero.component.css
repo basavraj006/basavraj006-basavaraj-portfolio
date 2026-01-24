@@ -1,0 +1,115 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  background-image: url('/assets/portfolio1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(11, 15, 20, 0.445),
+    rgba(11, 15, 20, 0)
+  );
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  padding: 120px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  width: 4px;
+  height: 80px;
+  background-color: var(--accent);
+  margin-bottom: 40px;
+}
+
+.hero-right h1 {
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.hero-right .accent {
+  color: var(--accent);
+}
+
+.hero-right h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #9ca3af;
+}
+
+.stack {
+  margin: 30px 0;
+  font-size: 16px;
+  color: #cbd5f5;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background-color: var(--accent);
+  color: #020617;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+}
+
+.outline {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.outline:hover {
+  background-color: var(--accent);
+  color: #020617;
+}
+
+/* this is for mobile responsive */
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-left {
+    height: 300px;
+  }
+
+  .hero-right {
+    padding: 60px 24px;
+  }
+
+  .line {
+    height: 50px;
+  }
+}

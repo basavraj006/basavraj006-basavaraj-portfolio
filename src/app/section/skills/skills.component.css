@@ -1,0 +1,73 @@
+.skills {
+  background-color: #0b0f14;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+  max-width: 1200px;
+}
+
+/* LEFT SIDE */
+.skills-left h2 {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+
+.skills-left p {
+  font-size: 18px;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+/* RIGHT SIDE */
+.skills-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.skill-block h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.skill-block ul {
+  list-style: none;
+}
+
+.skill-block li {
+  font-size: 15px;
+  color: #9ca3af;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Accent line */
+.skill-block li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 2px;
+  background-color: var(--accent);
+}
+/* this is for mob responsive */
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .skills-right {
+    grid-template-columns: 1fr;
+  }
+}

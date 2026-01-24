@@ -1,0 +1,70 @@
+.projects {
+  background-color: #0b0f14;
+}
+
+.projects-container {
+  max-width: 1100px;
+}
+
+.projects h2 {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: var(--accent);
+  margin-bottom: 60px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  border-top: 1px solid #1f2933;
+  padding: 40px 0;
+  transition: background 0.3s ease;
+}
+
+.project-card:last-child {
+  border-bottom: 1px solid #1f2933;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #d1d5db;
+  max-width: 800px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.tech {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  margin-bottom: 18px;
+}
+
+/* LINK */
+.project-card a {
+  font-size: 14px;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+  background: rgba(94, 234, 212, 0.03);
+}
+
+/* this is for mob responsive */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 32px 0;
+  }
+}

@@ -1,0 +1,80 @@
+.experience {
+  background-color: #0b0f14;
+}
+
+.experience-container {
+  max-width: 900px;
+  position: relative;
+}
+
+/* SECTION TITLE */
+.experience h2 {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: var(--accent);
+  margin-bottom: 60px;
+}
+
+/* EXPERIENCE ITEM */
+.experience-item {
+  position: relative;
+  padding-left: 40px;
+  border-left: 2px solid #1f2933;
+}
+
+/* DOT */
+.timeline-dot {
+  position: absolute;
+  left: -7px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+/* CONTENT */
+.experience-content h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.company {
+  display: block;
+  font-size: 15px;
+  color: #9ca3af;
+  margin-bottom: 4px;
+}
+
+.duration {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.experience-content ul {
+  list-style: none;
+}
+
+.experience-content li {
+  font-size: 15px;
+  color: #d1d5db;
+  line-height: 1.7;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Accent line before bullets */
+.experience-content li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 2px;
+  background-color: var(--accent);
+}
